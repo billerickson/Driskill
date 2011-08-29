@@ -1630,7 +1630,7 @@ div.gform_wrapper .gform_footer {
 }
 
 
-/* Driskill Dark - Defaults
+/* Driskill Dark 
 ------------------------------------------------------------ */
 
 body.driskill-dark {
@@ -1648,9 +1648,6 @@ body.driskill-dark #wrap {
 	background: transparent;
 }
 
-/* Driskill Dark - Header
------------------------------------------------------------- */
-
 .driskill-dark #header {
 	border-bottom: 1px solid #666;
 }
@@ -1659,65 +1656,67 @@ body.driskill-dark #wrap {
 	border-bottom: 1px solid #999;
 }
 
-
-/* Driskill Dark - Header Right Navigation
------------------------------------------------------------- */
-
+.driskill-dark #title a, 
+.driskill-dark #title a:hover,
 .driskill-dark #header ul.nav li a,
-.driskill-dark #header ul.menu li a {
+.driskill-dark #header ul.menu li a,
+.driskill-dark #header ul.nav li li a,
+.driskill-dark #header ul.menu li li a,
+.driskill-dark #nav li a,
+.driskill-dark #nav li li a,
+.driskill-dark #subnav li a,
+.driskill-dark #subnav li li a {
 	color: #ddd;
-	display: block;
-	font-size: 13px;
-	padding: 5px 10px;
-	position: relative;
-	text-decoration: none;
 }
 
+.driskill-dark #description,
 .driskill-dark #header ul.nav li a:hover,
-.driskill-dark #header ul.nav li a:active,
 .driskill-dark #header ul.nav .current_page_item a,
 .driskill-dark #header ul.nav .current-cat a,
 .driskill-dark #header ul.nav .current-menu-item a,
 .driskill-dark #header ul.menu li a:hover,
-.driskill-dark #header ul.menu li a:active,
 .driskill-dark #header ul.menu .current_page_item a,
 .driskill-dark #header ul.menu .current-cat a,
-.driskill-dark #header ul.menu .current-menu-item a {
+.driskill-dark #header ul.menu .current-menu-item a,
+.driskill-dark #nav li a:hover,
+.driskill-dark #nav .current_page_item a,
+.driskill-dark #nav .current-cat a,
+.driskill-dark #nav .current-menu-item a,
+.driskill-dark #footer p  {
 	color: #999;
 }
 
 
-.driskill-dark #header ul.nav li a .sf-sub-indicator,
-.driskill-dark #header ul.menu li a .sf-sub-indicator {
-	display: none;
-}
-
 .driskill-dark #header ul.nav li li a,
-.driskill-dark #header ul.nav li li a:link,
-.driskill-dark #header ul.nav li li a:visited,
 .driskill-dark #header ul.menu li li a,
-.driskill-dark #header ul.menu li li a:link,
-.driskill-dark #header ul.menu li li a:visited {
+.driskill-dark #nav li li a,
+.driskill-dark #subnav,
+.driskill-dark #subnav li a,
+.driskill-dark #subnav li li a {
 	background-color: #333;
-	color: #ddd;
-	font-size: 11px;
-	padding: 5px 10px;
-	position: relative;
-	width: 158px;
 }
 
 .driskill-dark #header ul.nav li li a:hover,
-.driskill-dark #header ul.nav li li a:active,
+.driskill-dark #header ul.nav li .current_page_item a,
+.driskill-dark #header ul.nav li .current-cat a,
+.driskill-dark #header ul.nav li .current-menu-item a,
 .driskill-dark #header ul.menu li li a:hover,
-.driskill-dark #header ul.menu li li a:active {
+.driskill-dark #header ul.menu li .current_page_item a,
+.driskill-dark #header ul.menu li .current-cat a,
+.driskill-dark #header ul.menu li .current-menu-item a,
+.driskill-dark #nav li li a:hover,
+.driskill-dark #nav li .current_page_item a,
+.driskill-dark #nav li .current-cat a,
+.driskill-dark #nav li .current-menu-item a,
+.driskill-dark #subnav li a:hover,
+.driskill-dark #subnav .current_page_item a,
+.driskill-dark #subnav .current-cat a,
+.driskill-dark #subnav .current-menu-item a,
+.driskill-dark #subnav li li a:hover,
+.driskill-dark #subnav li .current_page_item a,
+.driskill-dark #subnav li .current-cat a,
+.driskill-dark #subnav li .current-menu-item a {
 	background-color: #555;
-}
-
-/* Driskill Dark - Footer
------------------------------------------------------------- */
-
-.driskill-dark #footer p {
-	color: #999;
 }
 
 .driskill-dark #footer a {
@@ -1757,7 +1756,9 @@ body.driskill-dark #wrap {
 		border-top: 1px solid #eee;
 	}
 	
-	#header .widget-area ul {
+	#header .widget-area ul,
+	#nav ul,
+	#subnav ul {
 		clear:left;
 		float:left;
 		list-style:none;
@@ -1766,7 +1767,9 @@ body.driskill-dark #wrap {
 		text-align:center;
 	}
 	
-	#header .widget-area ul li {
+	#header .widget-area ul li,
+	#nav ul li,
+	#subnav ul li {
 		position:relative;
 		right:50%;
 	}
@@ -1798,8 +1801,14 @@ body.driskill-dark #wrap {
 
 	#header ul.nav li ul,
 	#header ul.menu li ul,
-	#header .widget-area ul ,
-	#header .widget-area li {
+	#header .widget-area ul,
+	#header .widget-area li,
+	#nav ul,
+	#nav ul li,
+	#nav li ul,
+	#subnav ul,
+	#subnav ul li,
+	#subnav li ul {
 		float:none;
 		clear:both;
 		margin:0;
@@ -1808,20 +1817,22 @@ body.driskill-dark #wrap {
 		width:100%;
 	}
 	
-	#header .widget-area li {
+	#header .widget-area li,
+	#nav li,
+	#subnav li {
 		margin:0!important;
 	}
 
-	#header .widget-area li a {
+	#header .widget-area li a,
+	#nav li a,
+	#subnav li a {
 		display:block;
 	}
 	
 	#header ul.nav li li a,
-	#header ul.nav li li a:link,
-	#header ul.nav li li a:visited,
 	#header ul.menu li li a,
-	#header ul.menu li li a:link,
-	#header ul.menu li li a:visited {
+	#nav li li a,
+	#subnav li li a {
 		background-color: transparent;
 		color: #333;
 		font-size: 11px;
@@ -1833,18 +1844,24 @@ body.driskill-dark #wrap {
 	#header ul.nav li li a:hover,
 	#header ul.nav li li a:active,
 	#header ul.menu li li a:hover,
-	#header ul.menu li li a:active {
+	#header ul.menu li li a:active,
+	#nav li li a:hover,
+	#subnav li li a:hover {
 		background-color: #ddd;
 	}
 
 	#header ul.nav li li a .sf-sub-indicator,
-	#header ul.menu li li a .sf-sub-indicator {
+	#header ul.menu li li a .sf-sub-indicator,
+	#nav li li a .sf-sub-indicator,
+	#subnav li li a .sf-sub-indicator {
 		background: none;
 		top: 0;
 	}
 
 	#header ul.nav li ul,
-	#header ul.menu li ul {
+	#header ul.menu li ul,
+	#nav li ul,
+	#subnav li ul {
 		display: block;
 		visibility: visible;
 		height: 100%;
@@ -1854,12 +1871,16 @@ body.driskill-dark #wrap {
 	}
 
 	#header ul.nav li ul a,
-	#header ul.menu li ul a {
+	#header ul.menu li ul a,
+	#nav li ul a,
+	#subnav li ul a {
 		width: auto;
 	}
 
 	#header ul.nav li ul ul,
-	#header ul.menu li ul ul {
+	#header ul.menu li ul ul,
+	#nav li ul ul,
+	#subnav li ul ul {
 		margin: 0;
 	}
 	
