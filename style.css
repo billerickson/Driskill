@@ -1451,6 +1451,9 @@ a.red-button {
 .home-footer-wrapper .widgettitle {
 	background: #e8e8e8 url('images/header-bg.jpg') repeat-x;
 	border-bottom: 1px solid #ccc;
+	font-family: "Myriad Pro", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
 	padding: 15px 25px 10px;
 	text-transform: uppercase;
 	-moz-border-radius-topleft: 10px;
