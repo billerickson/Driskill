@@ -50,7 +50,7 @@ function driskill_home_header() {
 }
 
 /**
- * Replace post listing with Home Content widget area
+ * Replace standard loop with Home Content widget area
  *
  */
 function driskill_home_loop() {
@@ -80,7 +80,7 @@ function driskill_home_sidebar() {
 }
 
 /**
- * Add Home Footer
+ * Home Footer
  *
  */
 function driskill_home_footer() {
