@@ -1723,6 +1723,12 @@ body.driskill-dark #wrap {
 	color: #98b2cb;
 }
 
+.driskill-dark #genesis-slider {
+	-moz-box-shadow: 0 0 0 #ccc;
+	-webkit-box-shadow: 0 0 0 #ccc;
+	box-shadow: 0 0 0 #ccc;
+}
+
 
 /* Responsive Design - Menu
 ------------------------------------------------------------ */
