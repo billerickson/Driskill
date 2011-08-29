@@ -6,7 +6,7 @@ add_action( 'genesis_theme_settings_metaboxes', 'driskill_add_style_settings_box
  *
  */
 function driskill_add_style_settings_box( $_genesis_theme_settings_pagehook ) {
-	add_meta_box( 'genesis-theme-settings-style', __( 'Color style', 'driskill' ), 'driskill_theme_settings_style_box', $_genesis_theme_settings_pagehook, 'main', 'high' );
+	add_meta_box( 'genesis-theme-settings-style', __( 'Color Style', 'driskill' ), 'driskill_theme_settings_style_box', $_genesis_theme_settings_pagehook, 'main', 'high' );
 }
 
 /**
