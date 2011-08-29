@@ -43,7 +43,7 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 add_image_size( 'driskill_featured', '900', '260', true);
 
 // Setup Styles
-add_action( 'init', 'driskill_setup_styles', 15 );
+add_action( 'init', 'driskill_setup_styles' );
 function driskill_setup_styles() {
 
 	// If running Genesis 1.8 or later, use the Genesis Styles option
