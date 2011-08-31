@@ -60,7 +60,7 @@ function driskill_setup_styles() {
 add_filter( 'genesis_slider_settings_defaults', 'driskill_slider_defaults' );
 function driskill_slider_defaults( $defaults ) {
 	$defaults['slideshow_height'] = '260';
-	$defaults['slideshow_width'] = '900';
+	$defaults['slideshow_width'] = '915';
 	return $defaults;
 }
 
@@ -76,7 +76,7 @@ function driskill_featured_image() {
 	}
 }
 
-// Move Sidebar out of content-sidebar-wrap
+// Move Sidebar out of content-sidebar-wrap, this is necessary for 3 column responsive design.
 remove_action('genesis_after_content', 'genesis_get_sidebar');
 add_action('genesis_after_content_sidebar_wrap', 'genesis_get_sidebar', 9);
 
