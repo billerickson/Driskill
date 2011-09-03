@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: functions.php:18
+#@ driskill
+msgid "Home Header"
+msgstr "Home Header"
+
+#: functions.php:23
+#@ driskill
+msgid "Home Content"
+msgstr "Home Content"
+
+#: functions.php:28
+#: home.php:71
+#@ driskill
+#@ genesis
+msgid "Home Sidebar"
+msgstr "Home Sidebar"
+
+#: functions.php:33
+#@ driskill
+msgid "Home Footer 1"
+msgstr "Home Footer 1"
+
+#: functions.php:38
+#@ driskill
+msgid "Home Footer 2"
+msgstr "Home Footer 2"
+
+#: home.php:74
+#, php-format
+#@ genesis
+msgid "This is the Home Sidebar. You can add content to this area by visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets to this area."
+msgstr ""
+
+#: lib/styles.php:9
+#: lib/styles.php:25
+#@ driskill
+msgid "Color Style"
+msgstr "Color Style"
+
+#: lib/styles.php:19
+#@ driskill
+msgid "Default"
+msgstr "Default"
+
+#: lib/styles.php:20
+#@ driskill
+msgid "Dark"
+msgstr "Dark"
+
+#: lib/styles.php:32
+#@ driskill
+msgid "Please select the color style from the drop down list and save your settings."
+msgstr "Please select the color style from the drop down list and save your settings."
+
