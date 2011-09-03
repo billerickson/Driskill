@@ -36,8 +36,43 @@ genesis_register_sidebar( array(
 	'id' => 'home-footer-2' 
 ) );
 
+// Add support for custom header 
+add_theme_support( 'genesis-custom-header', array( 'width' => 270, 'height' => 120, 'textcolor' => '333', 'admin_header_callback' => 'driskill_admin_style', 'header_callback' => 'driskill_custom_header_style' ) );
+
+/**
+ * Register a custom admin callback to display the custom header preview with the
+ * same style as is shown on the front end.
+ *
+ */
+function driskill_admin_style() {
+
+	$googlefont = '@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);';
+	$headimg = sprintf( '.appearance_page_custom-header #headimg { background: url(%s) no-repeat;  min-height: %spx; }', get_header_image(), HEADER_IMAGE_HEIGHT );
+	$h1 = sprintf( '#headimg h1, #headimg h1 a { color: #%s; font-family: Open Sans Condensed, arial, serif; font-size: 36px; font-weight: normal; line-height: 40px; margin: 0; text-transform: uppercase; text-decoration: none; }', esc_html( get_header_textcolor() ) );
+	$desc = sprintf( '#headimg #desc { color: #%s; font-family: Arial, Helvetia, sans-serif; font-size: 12px; font-style:italic; }', esc_html( get_header_textcolor() ) );
+
+	printf( '<style type="text/css">%1$s %2$s %3$s %4$s</style>', $googlefont, $headimg, $h1, $desc );
+
+}
+
+function driskill_custom_header_style() {
+
+	/** If no options set, don't waste the output. Do nothing. */
+	if ( HEADER_TEXTCOLOR == get_header_textcolor() && HEADER_IMAGE == get_header_image() )
+		return;
+
+	$header = sprintf( '#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }', esc_url( get_header_image() ) );
+	$text = sprintf( '#title a, #title a:hover, #description { color: #%s; }', esc_html( get_header_textcolor() ) );
+
+	printf( '<style type="text/css">%1$s %2$s</style>', $header, $text );
+
+
+}
+
+
 // Setup Footer Widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
 
 // Setup Image Sizes
 add_image_size( 'driskill_featured', '900', '260', true);
@@ -66,13 +101,23 @@ function driskill_slider_defaults( $defaults ) {
 
 
 // ** Frontend Settings ** //	
+
+// Body Classes
+add_filter( 'body_class', 'driskill_body_classes' );
+function driskill_body_classes( $classes ) {
+	if ( is_active_sidebar( 'header-right' ) ) $classes[] = 'header-widget';
+	return $classes;
+}
+
 // Featured Image
 add_action('genesis_before_content_sidebar_wrap', 'driskill_featured_image');
 function driskill_featured_image() {
 	global $post;
 	if ( has_post_thumbnail() && is_singular() ) {
 		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'driskill_featured' );
-		echo '<p class="featured-image"><img src="' . $image_url[0] . '" alt="' . the_title_attribute( 'echo=0' ) . ' Image" /></p>';
+		// For some reason has_post_thumbnail() sometimes returns true even if there's no thumbnail. This prevents a blank image from showing up.
+		if ( !empty( $image_url[0] ) )
+			echo '<p class="featured-image"><img src="' . $image_url[0] . '" alt="' . the_title_attribute( 'echo=0' ) . ' Image" /></p>';
 	}
 }
 
