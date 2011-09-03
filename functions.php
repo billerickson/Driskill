@@ -8,6 +8,9 @@ define( 'CHILD_THEME_NAME', 'Driskill Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/themes/driskill' );
 define( 'CHILD_THEME_VERSION', '1.0' );
 define( 'CHILD_THEME_SLUG', 'driskill' );
+
+// ** Translations ** //
+load_theme_textdomain( 'driskill', CHILD_DIR . '/lib/languages');  
 	
 // ** Backend Settings ** //
 // Setup Sidebars
@@ -67,10 +70,8 @@ function driskill_custom_header_style() {
 
 }
 
-
 // Setup Footer Widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
-
 
 // Setup Image Sizes
 add_image_size( 'driskill_featured', '900', '260', true);
