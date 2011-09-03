@@ -5,7 +5,7 @@ require_once( TEMPLATEPATH . '/lib/init.php' );
 
 // ** Child Theme (do not remove) ** //
 define( 'CHILD_THEME_NAME', 'Driskill Theme' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/themes/driskill' );
+define( 'CHILD_THEME_URL', 'http://market.studiopress.com/themes/driskill' );
 define( 'CHILD_THEME_VERSION', '1.0' );
 define( 'CHILD_THEME_SLUG', 'driskill' );
 
