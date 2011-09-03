@@ -36,14 +36,12 @@ genesis_register_sidebar( array(
 	'id' => 'home-footer-2' 
 ) );
 
+// Add suport for custom background 
+add_custom_background();
+
 // Add support for custom header 
 add_theme_support( 'genesis-custom-header', array( 'width' => 270, 'height' => 120, 'textcolor' => '333', 'admin_header_callback' => 'driskill_admin_style', 'header_callback' => 'driskill_custom_header_style' ) );
 
-/**
- * Register a custom admin callback to display the custom header preview with the
- * same style as is shown on the front end.
- *
- */
 function driskill_admin_style() {
 
 	$googlefont = '@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);';
