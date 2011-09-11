@@ -1733,18 +1733,26 @@ body.driskill-dark #wrap {
 		width: 100%;
 	}
 	
-	/* This allows the header to be centered at lower resolutions */
+	/* This allows the header to be centered at lower resolutions when no header right widget */
 	.header-full-width #title-area {
 		width: 270px;
+		margin: 0 auto;
+		float: none;
 	}
 	
 	/* This allows the header to be centered at lower resolutions */
 	.header-image #title-area {
-		float: none;
+			float: none;
 	}
 	
+	/* When title is text, header is 120px tall */
 	.header-widget #header .wrap {
 		overflow: visible;
+		height: 120px;
+	}
+	
+	/* When using an image, bump it up to 170px */
+	.header-image.header-widget #header .wrap {
 		height: 170px;
 	}
 	
