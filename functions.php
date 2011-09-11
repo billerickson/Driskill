@@ -58,8 +58,9 @@ function driskill_admin_style() {
 
 function driskill_custom_header_style() {
 
-	/** If no options set, don't waste the output. Do nothing. */
-	if ( HEADER_TEXTCOLOR == get_header_textcolor() && HEADER_IMAGE == get_header_image() )
+	/** If no image set, do nothing. */
+	$image = esc_url( get_header_image() );
+	if ( empty( $image ) )
 		return;
 
 	$header = sprintf( '#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }', esc_url( get_header_image() ) );
