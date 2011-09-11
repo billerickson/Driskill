@@ -1776,6 +1776,7 @@ body.driskill-dark #wrap {
 		clear:left;
 		float:left;
 		list-style:none;
+		margin-left: 0;
 		position:relative;
 		left:50%;
 		text-align:center;
