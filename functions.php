@@ -58,16 +58,15 @@ function driskill_admin_style() {
 
 function driskill_custom_header_style() {
 
-	/** If no image set, do nothing. */
+	/** If there is a custom image, output css */
 	$image = esc_url( get_header_image() );
-	if ( empty( $image ) )
-		return;
-
-	$header = sprintf( '#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }', esc_url( get_header_image() ) );
-	$text = sprintf( '#title a, #title a:hover, #description { color: #%s; }', esc_html( get_header_textcolor() ) );
-
-	printf( '<style type="text/css">%1$s %2$s</style>', $header, $text );
-
+	if ( !empty( $image ) )
+		printf( '<style type="text/css">#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }</style>', $image );
+		
+	/** If there is a custom text color, output css */
+	$text = esc_html( get_header_textcolor() );
+	if( !empty( $text ) )
+		printf( '<style type="text/css">#title a, #title a:hover, #description { color: #%s; }</style>', $text );
 
 }
 
