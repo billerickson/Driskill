@@ -2064,6 +2064,12 @@ body.driskill-dark #wrap {
 		width: 100%;
 	}
 	
+	.sidebar-sidebar-content #content-sidebar-wrap {
+		float: none;
+		margin-left: 0;
+		width: 100%;
+	}
+
 	.footer-widgets-1 .widget,
 	.footer-widgets-2 .widget,
 	.footer-widgets-3 .widget {
@@ -2072,4 +2078,5 @@ body.driskill-dark #wrap {
 		-webkit-border-radius: 10px;
 		border-radius: 10px;
 	}
+	
 }
