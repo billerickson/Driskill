@@ -20,7 +20,6 @@ Footer 1 - This is the left side of the site-wide footer.
 Footer 2 - This is the middle of the site-wide footer.
 Footer 3 - This is the right of the site-wide footer.
 
-
 <strong>FEATURED IMAGES</strong>
 By default WordPress will create a default thumbnail image for each image you upload and the size can be specified in your dashboard under Settings > Media. In addition, the Driskill child theme creates the following thumbnail images you'll see below, which are defined (and can be modified) in the functions.php file. These are the recommended thumbnail sizes that are used on the Driskill child theme demo site.
 
