@@ -101,6 +101,12 @@ function driskill_slider_defaults( $defaults ) {
 
 // ** Frontend Settings ** //	
 
+// Viewport Meta Tag for Mobile Browsers
+add_action( 'genesis_meta', 'driskill_viewport_meta_tag' );
+function driskill_viewport_meta_tag() {
+	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
+}
+
 // Body Classes
 add_filter( 'body_class', 'driskill_body_classes' );
 function driskill_body_classes( $classes ) {
