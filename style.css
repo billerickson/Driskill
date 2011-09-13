@@ -1,11 +1,69 @@
 /*
-	Theme Name: Driskill
-	Description: Responsive Design child theme for Genesis.
+	Theme Name: Driskill Child Theme
+	Theme URI: http://market.studiopress.com/themes/driskill
+	Description: Driskill is a mobile-friendly responsive design created for the Genesis Framework.
 	Author: Bill Erickson
 	Author URI: http://www.billerickson.net
+
+	Version: 1.0
 	
 	Template: genesis
+	Template Version: 1.7.1
+
+	License: GNU General Public License v2.0
+	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
+
+/* Table of Contents
+
+* Import Fonts
+* Defaults
+* Hyperlinks
+* Wrap
+* Header
+* Image Header - Partial Width
+* Image Header - Full Width
+* Navigation Constants
+* Header Right Navigation
+* Primary Navigation
+* Primary Navigation Extras
+* Secondary Navigation
+* Inner
+* Breadcrumb
+* Taxonomy Description
+* Structural Columns
+* Content
+* Column Classes
+* Featured Post Grid
+* Headlines
+* Unordered / Ordered Lists
+* Post Info
+* Post Meta
+* Author Box
+* Sticky Posts
+* Archive Page
+* Images
+* Post Navigation
+* Primary / Secondary Sidebars
+* Tag Cloud
+* Dropdowns
+* Featured Page / Post
+* User Profile
+* Buttons
+* Search Form
+* eNews & Updates Widget
+* Calendar Widget
+* Footer Widgets
+* Footer
+* Comments
+* Gravity Forms
+* Home
+* Driskill Dark
+* Responsive Design - Menu and Logo
+* Responsive Design - Featured Image / Home Header
+* Responsive Design - Structural Columns
+*/
+
 
 /* Import Fonts
 ------------------------------------------------------------ */
@@ -1421,51 +1479,6 @@ a.red-button {
 	border-bottom-right-radius: 10px;
 }
 
-/* Home
------------------------------------------------------------- */
-
-.home-header {
-	margin-bottom: 20px;
-}
-
-.home-content .widget,
-.home-footer-wrapper .widget {
-	background: #f0f0f0;
-	border: 1px solid #dfdfdf;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-
-
-.home-content .widgettitle,
-.home-footer-wrapper .widgettitle {
-	background: #e8e8e8 url('images/header-bg.jpg') repeat-x;
-	border-bottom: 1px solid #ccc;
-	font-family: "Myriad Pro", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 22px;
-	padding: 15px 25px 10px;
-	text-transform: uppercase;
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-topright: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-}
-
-.home-content p {
-	padding-bottom: 15px;
-}
-
-#home-footer-2 {
-	float: right;
-	margin-right: 2px;
-}
-
-
 /* Footer
 ------------------------------------------------------------ */
 
@@ -1625,6 +1638,52 @@ div.gform_wrapper .gform_footer {
 .gform_wrapper .gform_footer input[type="submit"] {
 	font-size: 12px !important;
 }
+
+/* Home
+------------------------------------------------------------ */
+
+.home-header {
+	margin-bottom: 20px;
+}
+
+.home-content .widget,
+.home-footer-wrapper .widget {
+	background: #f0f0f0;
+	border: 1px solid #dfdfdf;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+.home-content .widgettitle,
+.home-footer-wrapper .widgettitle {
+	background: #e8e8e8 url('images/header-bg.jpg') repeat-x;
+	border-bottom: 1px solid #ccc;
+	font-family: "Myriad Pro", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 15px 25px 10px;
+	text-transform: uppercase;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+}
+
+.home-content p {
+	padding-bottom: 15px;
+}
+
+#home-footer-2 {
+	float: right;
+	margin-right: 2px;
+}
+
+
 
 
 /* Driskill Dark 
