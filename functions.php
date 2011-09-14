@@ -10,7 +10,7 @@ define( 'CHILD_THEME_VERSION', '1.0' );
 define( 'CHILD_THEME_SLUG', 'driskill' );
 
 // ** Translations ** //
-load_child_theme_textdomain( 'driskill', CHILD_DIR . '/lib/languages');  
+load_child_theme_textdomain( 'driskill', get_stylesheet_directory() . '/lib/languages');  
 	
 // ** Backend Settings ** //
 // Setup Sidebars
@@ -60,6 +60,8 @@ function driskill_custom_header_style() {
 
 	/** If there is a custom image, output css */
 	$image = esc_url( get_header_image() );
+	
+	/** If no image is set, for some reason WP returns header.png, so this makes sure an actual image was uploaded */
 	$default = get_stylesheet_directory_uri() . '/images/header.png';
 	if ( !empty( $image ) && $default !== $image )
 		printf( '<style type="text/css">#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }</style>', $image );
