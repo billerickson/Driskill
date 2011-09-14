@@ -10,7 +10,7 @@ define( 'CHILD_THEME_VERSION', '1.0' );
 define( 'CHILD_THEME_SLUG', 'driskill' );
 
 // ** Translations ** //
-load_theme_textdomain( 'driskill', CHILD_DIR . '/lib/languages');  
+load_child_theme_textdomain( 'driskill', CHILD_DIR . '/lib/languages');  
 	
 // ** Backend Settings ** //
 // Setup Sidebars
