@@ -60,7 +60,8 @@ function driskill_custom_header_style() {
 
 	/** If there is a custom image, output css */
 	$image = esc_url( get_header_image() );
-	if ( !empty( $image ) )
+	$default = get_stylesheet_directory_uri() . '/images/header.png';
+	if ( !empty( $image ) && $default !== $image )
 		printf( '<style type="text/css">#header #title-area #title { background: url(%s) no-repeat; width: 270px; height: 120px; }</style>', $image );
 		
 	/** If there is a custom text color, output css */
